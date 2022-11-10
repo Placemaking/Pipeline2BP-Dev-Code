@@ -56,7 +56,7 @@ export const SignUpScreen = ( props ) => {
 
         // Assemble the request body
         const userBody = {
-            email: email,
+            email: email.toLowerCase(),
             password: password
         };
         if (firstname !== '') userBody.firstname = firstname;
