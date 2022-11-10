@@ -392,7 +392,7 @@ export function UserSettings(props) {
 
           <View style={styles.userDetails}>
             <Text style={styles.details}> {props.firstName} {props.lastName} </Text>
-            <Text style={styles.details}> {props.email} </Text>
+            <Text style={styles.details}> {props.email.charAt(0).toUpperCase() + props.email.slice(1)} </Text>
           </View>
 
           <Button style={styles.button} onPress={() => setSettingsModalVisible(!settingsModalVisible)} accessoryRight = {editIcon}>
